@@ -29,7 +29,7 @@
           />
           <ul class="nav__links">
             <li><a class="nav__link">Recipes</a></li>
-            <li><a class="nav__link">Book a table</a></li>
+            <li><a class="nav__link" href="#book-a-table">Book a table</a></li>
             <li><a class="nav__link">Menu</a></li>
             <li><a class="nav__link">Contacts</a></li>
           </ul>
@@ -73,6 +73,7 @@
         title="Aeropress recipe"
         allowfullscreen
         ></iframe>
+        
         <p class="recipes__video-caption">
         <span>Aeropress Recipe</span>
         <span> ~5min</span>
@@ -92,8 +93,69 @@
       <span>~15min</span>
       </p>
   </div>
-       </section> <!-- Add the recipes section here -->
+</section>
+
+        <section class="reservation" id="book-a-table>"
+          <h2 class="reservation__title">Book a table</h2>
+
+          <form class="reservation__form">
+            <fieldset class="reservation__fieldset">
+              <label class="reservation__label" for="name">Name*</label>
+              <input
+              class="reservatiion_input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name Surname"
+              required
+              />
+
+              <label class="reservation__label" for="guests">Number of guests*</label>
+              <input
+              class="reservation__input"
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              max="8"
+              placeholder="1-8"
+              required
+              />
+
+              <label class="reservation__label" for="date">Date &amp; time*</label>
+              <input
+              class="reservation__input"
+              type="datetime-local"
+              id="date"
+              name="date"
+              required
+              />
+
+              <label class="reservation__label" for="email"> Your email*</label>
+              <input
+              class="reservation__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@gmail.com"
+              required
+              />
+
+              <button class="reservation__button" type="submit">Book a table</button>
+              <label class="reservation__checkbox-label" for="terms">
+                <input
+                class="reservation__checkbox"
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+                />
+                I agree with the terms of use
+              </label>
+            </fieldset>
+          </form>
       </main>
+    </section>
 
       <footer class="footer">
         <div class="footer__content">
